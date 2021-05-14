@@ -27,7 +27,8 @@ public class User
 					 return "Error while connecting to the database for reading.";
 				 }
 				 // Prepare the html table to be displayed
-				 output = "<table border='1'><tr><th>User Code</th>"+ 
+				 output = "<table border='1'><tr> "+ 
+						 "<th>User Code</th>" +
 				 		"<th>First Name</th>" +
 						 "<th>Last Name</th>" +
 						 "<th>dob</th>" +
@@ -63,7 +64,8 @@ public class User
 					 String typeResearcher_T_F = rs.getString("typeResearcher_T_F");
 					 String typeFundingBodies_T_F = rs.getString("typeFundingBodies_T_F");
 					 // Add into the html table
-					 output += "<tr><td><input id='hidUserIDUpdate'name='hidUserIDUpdate'type='hidden' value='" + uID + "'>" + userCode + "</td>";
+					 output += "<tr><td><input id='hidUserIDUpdate' name='hidUserIDUpdate'type='hidden' value='" + uID
+							 + "'>" + userCode + "</td>"; 
 					 output += "<td>" + firstName + "</td>";
 					 output += "<td>" + lastName + "</td>";
 					 output += "<td>" + dob + "</td>";
